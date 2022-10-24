@@ -12,7 +12,7 @@ const ChosenBook = () => {
             <div className="allInfo">
                 <div className="top">
             <div className="back">
-                <Link to={'/'}><AiOutlineArrowLeft /></Link>
+                <Link to={'/Book-Store'}><AiOutlineArrowLeft /></Link>
             </div>
                 <div className="image">
                     <img src={newBook.formats['image/jpeg']} alt={newBook.title} />
