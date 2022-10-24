@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name" : "Mohamed Saeed",
+        "opinion" : " Mostly used collection, but they keep the recently popular books as well. The woman who runs the store (or at least was in there by herself) was super nice and helpful. They have really cool original art in the store as well, made it even more unique.",
+        "stars" : 5,
+        "image" : "https://images.unsplash.com/photo-1599566147214-ce487862ea4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=347&q=80"
+    },
+    {
+        "id": 2,
+        "name" : "Ali Mohamed",
+        "opinion" : "Very nice atmosphere and collection. Also some very interesting subjects on their collection.",
+        "stars" : 4,
+        "image" : "https://images.unsplash.com/photo-1548544149-4835e62ee5b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "id": 3,
+        "name" : "Nour Maged",
+        "opinion" : "Great selection of books and the owners were so very helpful. Wonderful place to just take your time and browse",
+        "stars" : 5,
+        "image" : "https://images.unsplash.com/photo-1626526804650-7118ac691b7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+    },
+    {
+        "id": 4,
+        "name" : "Ahmed Mokhtar",
+        "opinion" : "What an amazing little bookstore. Very friendly. Even though I only bought a dorje and some incense they made me feel welcome. I found my new bookstore.",
+        "stars" : 3,
+        "image" : "https://images.unsplash.com/photo-1535320485706-44d43b919500?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "id": 5,
+        "name" : "Shereen Mohamed",
+        "opinion" : "This is an amazing book store. It’s in a great location with great parking. They’ve got lots of books – new, used, and rare.",
+        "stars" : 5,
+        "image" : "https://images.unsplash.com/photo-1635902549184-cf89a051e463?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=415&q=80"
+    },
+    {
+        "id": 6,
+        "name" : "Hossam Magdy",
+        "opinion" : "My Favorite. This is a great store. There is lots of parking! The store has a huge variety of metaphysical books, new and used. They even carry rare books.",
+        "stars" : 4,
+        "image" : "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    }
+]

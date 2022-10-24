@@ -1,0 +1,60 @@
+.books .booksViewer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 4rem;
+  overflow: scroll;
+  padding: 1.5rem 3rem;
+  transition: 0.5s all linear;
+  scroll-behavior: smooth;
+}
+
+.books .booksViewer::-webkit-scrollbar-thumb {
+  background: #dfc064;
+  border-radius: 2px;
+}
+
+.booksViewer::-webkit-scrollbar-track {
+  background-color: #fcecbf;
+  border-radius: 2px;
+}
+
+.booksViewer::-webkit-scrollbar {
+  width: 0px;
+}
+
+.books .tracker {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.books .tracker .dots {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.books .tracker .dots li {
+  background-color: var(--buttonColor);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.books .tracker .dots li.active {
+  opacity: 1;
+}
+
+.books .tracker .arrows {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.books .tracker .arrows > :nth-child(1),
+.books .tracker .arrows > :nth-child(2) {
+  fill: var(--buttonColor);
+  font-size: 1.4rem;
+  cursor: pointer;
+}

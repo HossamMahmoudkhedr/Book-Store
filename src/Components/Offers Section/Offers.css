@@ -1,0 +1,147 @@
+.offers {
+  font-family: "Tajawal", sans-serif;
+  padding: 2rem 5rem 6rem 5rem;
+}
+.offers .offer {
+  display: flex;
+  filter: drop-shadow(2px 1px 12px #a3a3a3);
+}
+.offers .offer .image {
+  width: 50%;
+}
+.offers .offer .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.offers .offer {
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+}
+
+.offers .offer .text {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer .text .label {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background-color: #e00101;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.offer .text .label::before {
+  content: "";
+  position: absolute;
+  top: 32px;
+  right: -7px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 43px solid #e00101;
+  transform: rotate(-18deg);
+  z-index: -1;
+}
+.offer .text .label::after {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: -7.1px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-top: 43px solid #e00101;
+  transform: rotate(18deg);
+  z-index: -1;
+}
+.offer .text .head {
+  margin: 1.5rem 1.5rem 3rem;
+  position: relative;
+}
+.offer .text .head::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 5px;
+  background-color: var(--buttonColor);
+  bottom: -25px;
+  left: 29%;
+}
+.offer .text .head h4 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #283624;
+}
+.offer .text .par {
+  margin-bottom: 1.5rem;
+}
+.offer .text .par p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.btn {
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  background-color: #d4a003;
+}
+
+@media (max-width: 800px) {
+  .offers {
+    padding: 2rem 1rem 6rem 1rem;
+  }
+  .offers .offer {
+    flex-direction: column-reverse;
+  }
+  .offers .offer .image {
+    display: none;
+    width: unset;
+  }
+  .offers .offer .image img {
+    display: none;
+  }
+  .offers .offer .text {
+    width: 100%;
+    padding: 10px;
+    background-position: center;
+    background-image: url(../../assets/offer.jpg);
+    background-size: cover;
+    color: white;
+  }
+
+  .offer .text .head h4 {
+    font-size: 2rem;
+    color: #020202;
+    font-weight: 600;
+  }
+  .offers .offer .text {
+    padding: unset;
+  }
+}
+
+@media (max-width: 1115px) {
+  .offer .text .head h4 {
+    font-size: 2rem;
+  }
+  .offers .offer .text .label {
+    right: 7px;
+  }
+
+  .offers .offer .text {
+    padding: 10px;
+  }
+}

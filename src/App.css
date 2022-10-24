@@ -1,38 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap");
+:root {
+  --buttonColor: #e6ac00;
+  --buttonBorderColor: #f7df99;
+  --textColor: #c5c3c3;
+  --pageColor: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
 .App {
-  text-align: center;
+  width: 1349px;
+  margin: auto;
+} */
+body {
+  background-color: var(--pageColor);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+  text-align: center;
+  padding: 5rem 3.5rem 3.5rem;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading h3 {
+  font-size: 3rem;
+  font-family: "Aboreto", cursive;
 }

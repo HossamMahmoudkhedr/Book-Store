@@ -1,0 +1,172 @@
+.login-signUp {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--buttonBorderColor);
+  padding: 25px;
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+form input::placeholder {
+  font-family: "Tajawal", sans-serif;
+}
+.login-signUp input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--buttonBorderColor);
+  border-radius: 8px;
+}
+.login-signUp .login {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.login-signUp form h2 {
+  font-family: "Aboreto", cursive;
+  margin-bottom: 1rem;
+  color: #283624;
+}
+.login-signUp .signUp {
+  width: 50%;
+}
+
+.login-signUp .signUp form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login-signUp .signUp form .gender {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+#male,
+#female {
+  margin: 0;
+}
+.login-signUp .signUp form .nameSection {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.login-signUp .signUp form .birthday {
+  text-align: start;
+  display: block;
+  width: 100%;
+}
+.login-signUp .signUp form .birthday input {
+  margin-top: 0.5rem;
+}
+
+.login-signUp .cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #283624;
+  width: 50%;
+  height: 100%;
+  z-index: 99;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: wheat;
+  transition: all 0.4s linear;
+}
+.login-signUp .cover.active {
+  transform: translateX(-100%);
+}
+.login-signUp .cover button {
+  transition: all 0.5s linear;
+}
+.login-signUp .cover button.rotate {
+  transform: rotateX(360deg);
+}
+
+.error {
+  background-color: rgb(214, 70, 70);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.error.active {
+  display: block;
+}
+
+.login-signUp .back {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-signUp .back .btn {
+  background-color: #272727;
+}
+@media (min-width: 851px) {
+  .moreText {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .login-signUp .cover {
+    display: none;
+  }
+  .login-signUp .login {
+    width: 100%;
+  }
+  .login-signUp .signUp {
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+  }
+  .login-signUp .signUp.hide {
+    transform: translate(50%, 5%) scale(0);
+  }
+  .login-signUp .signUp {
+    width: 100%;
+    background-color: var(--buttonBorderColor);
+    left: -50%;
+    padding: 0.8rem;
+    top: -50%;
+    border-radius: inherit;
+    transform: translate(50%, 5%);
+  }
+  .moreText {
+    margin-top: 15px;
+  }
+  .moreText p {
+    margin-bottom: 10px;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+  .login-signUp .back {
+    width: 60px;
+    top: 153%;
+    left: 46%;
+    transform: translateX(-50%);
+    z-index: 99;
+  }
+}

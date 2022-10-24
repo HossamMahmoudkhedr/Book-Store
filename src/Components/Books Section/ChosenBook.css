@@ -1,0 +1,89 @@
+.Book {
+  padding: 20px;
+}
+
+.Book .back {
+  margin-bottom: 10px;
+}
+
+.Book .allInfo .top {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+.Book .allInfo .image {
+  width: 280px;
+  margin-bottom: 10px;
+}
+
+.Book .allInfo .image img {
+  width: 100%;
+}
+.Book .allInfo .textInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  gap: 1rem;
+}
+.Book .allInfo .textInfo .left h3 {
+  font-size: 1.2rem;
+}
+
+.Book .allInfo .textInfo .left p {
+  font-size: 1.2rem;
+}
+
+.Book .allInfo .textInfo .left h2 {
+  font-size: 1.7rem;
+  color: brown;
+}
+
+.Book .allInfo .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 3rem;
+}
+.Book .allInfo .about .more {
+  width: 70%;
+}
+
+.Book .allInfo .about .bookShelf {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+@media (max-width: 500px) {
+  .Book .allInfo .top {
+    flex-direction: column;
+  }
+  .Book .allInfo .about {
+    flex-direction: column;
+    padding: 1rem 0rem;
+  }
+  .Book .allInfo .about .more {
+    width: 100%;
+  }
+  .Book .allInfo .about .bookShelf {
+    margin: 20px auto;
+  }
+  .Book .allInfo .image {
+    width: 244px;
+  }
+}
+
+@media (max-width: 960px) {
+  .Book .allInfo .about .bookShelf {
+    position: unset;
+  }
+}

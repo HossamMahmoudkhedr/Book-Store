@@ -1,0 +1,215 @@
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Aboreto", cursive;
+}
+header img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  width: 100vw;
+}
+header .black {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: rgb(34, 33, 33);
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+header .top .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.links li a,
+.top .login a,
+.menu .menu-login a {
+  color: white;
+  font-weight: 700;
+  transition-duration: 0.4s;
+}
+
+.top .login a,
+.menu .menu-login a {
+  background-color: var(--buttonColor);
+  padding: 0.6rem;
+  border-radius: 20px;
+}
+
+.links li a:hover,
+.menu-links a:hover {
+  color: var(--buttonColor);
+}
+
+.top .login a:hover,
+.menu-login a:hover {
+  background-color: white;
+  color: var(--buttonColor);
+}
+header .logo {
+  font-family: "Aboreto", cursive;
+}
+header .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 3.5rem; */
+  gap: 2rem;
+  text-align: center;
+  height: calc(100vh - 77px);
+  justify-content: center;
+}
+
+header .title h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+header .title p {
+  color: var(--textColor);
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Tajawal", sans-serif;
+  letter-spacing: 1.2px;
+}
+
+header .title .searchBox .search {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: "Tajawal", sans-serif;
+}
+
+header .title .searchBox {
+  position: relative;
+  width: 30%;
+}
+
+header .title .searchBox #error {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif;
+  color: #fd4a4a;
+}
+header .title .searchBox button {
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  width: 30%;
+  transition-duration: 0.4s;
+  font-family: "Tajawal", sans-serif;
+}
+
+header .title .searchBox button:hover {
+  background-color: #cf9c01;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--buttonBorderColor);
+  background-color: var(--buttonColor);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu .all {
+  position: absolute;
+  background-color: wheat;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  width: 80%;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 1.3rem;
+  height: 70%;
+  z-index: 99;
+  transition: all 0.3s linear;
+  transform-origin: top right;
+}
+.menu .all.active {
+  transform: translateX(-50%) scale(1);
+}
+.menu-links a {
+  transition: all 0.2s linear;
+}
+.all a {
+  color: #283624;
+}
+.menu .menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+#error {
+  display: none;
+}
+#error.active {
+  display: block;
+}
+@media (min-width: 990px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 989px) {
+  header .links li,
+  .login {
+    display: none;
+  }
+  header {
+    background-image: url(../../assets/Header\ Image.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.99;
+  }
+  header .top img {
+    display: none;
+  }
+  .top .logo {
+    font-size: 1.4rem;
+  }
+
+  header .title h1 {
+    font-size: 2rem;
+  }
+  header .title p {
+    font-size: 1rem;
+  }
+  header .title .searchBox {
+    width: 65%;
+  }
+  header .title .searchBox button {
+    right: 3%;
+    top: 14%;
+    width: 31%;
+    font-size: 0.8rem;
+  }
+}

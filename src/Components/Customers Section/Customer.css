@@ -1,0 +1,59 @@
+.customer {
+  font-family: "Tajawal", sans-serif;
+  padding: 1.2rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.customer .info {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.customer .info::before {
+  content: "";
+  width: 110%;
+  position: absolute;
+  left: -19px;
+  bottom: -6px;
+  height: 0.5px;
+  background-color: #eee;
+}
+
+.customer .info .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+.customer .info .image img {
+  position: absolute;
+  width: 110px;
+  height: 130px;
+  left: -5px;
+  top: -5px;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.customer .info .text h6 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.customer .info .text .rate {
+  display: flex;
+  gap: 0.5rem;
+}
+.customer .info .text .rate svg {
+  fill: #ffd700;
+}
+
+.customer .opinion {
+  line-height: 1.8;
+  color: gray;
+}
