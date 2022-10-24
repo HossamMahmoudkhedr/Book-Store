@@ -43,7 +43,7 @@ const Login = () => {
   return (
       <div className="login-signUp">
           <div className="back">
-              <Link to='/'><button className='btn'>Back Home</button></Link>
+              <Link to='/Book-Store'><button className='btn'>Back Home</button></Link>
           </div>
           <div className="cover" id='cover'>
               <h2>{text}</h2>
